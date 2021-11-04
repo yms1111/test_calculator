@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>퍼플레이2.0 환불 계산</title>
+  </head>
+  <body>
+    <h1>퍼플레이2.0 환불 계산기</h1>
+
+    <div>
+      <h2>1. 결제 방식 선택</h2>
+      <select id="payment" onchange="categoryChange(this)">
+        <option value="list">결제 방식을 선택해 주세요.</option>
+        <option value="card">카드</option>
+        <option value="kakaopay">카카오페이</option>
+        <option value="phone">휴대폰 소액 결제</option>
+        <option value="account">실시간 계좌이체</option>
+        <option value="paypal">페이팔</option>
+      </select>
+    </div>
+
+    <div>
+      <h2>2. 결제 금액 선택</h2>
+      <select id="amount">
+        <option>결제 금액을 선택해 주세요.</option>
+      </select>
+    </div>
+
+    <div>
+      <h2>3. 잔여 퍼니 입력</h2>
+      <input id="poney" type="text" name="poney"> 퍼니</input>
+    </div>
+
+    <div>
+      <br>
+      <button type="button" name="button" onclick="check()">4. 예상 환불액 보기</button>
+    </div>
+
+    <br> <hr>
+
+    <div>
+      <p id="answer"><p>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
